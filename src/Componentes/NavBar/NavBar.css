@@ -10,7 +10,7 @@
     
 }
 a{
-    padding: 1em;
+    padding: 1.5em;
 }
 .logoContainer{
     display: flex;
@@ -20,7 +20,7 @@ a{
     overflow: hidden;
     border-radius: 50%;
     margin: 0 1em;
-    
+
 }
 .logoContainer img {
     width: 100%;
