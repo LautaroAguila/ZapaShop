@@ -1,0 +1,7 @@
+.carro {
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    color: rgb(179, 119, 71);
+    margin: gi0 2em;
+}

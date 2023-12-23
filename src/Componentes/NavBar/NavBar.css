@@ -1,0 +1,31 @@
+.containerNav{
+    
+    margin: 0 auto;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    
+    
+}
+a{
+    padding: 1em;
+}
+.logoContainer{
+    width: 5%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    margin: 0 1em;
+}
+.logoContainer img {
+    width: 100%;
+    height: auto;
+}
+
+.linksContainer a{
+    font-size: 80%;
+    color: rgb(179, 119, 71);
+}
