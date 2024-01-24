@@ -36,4 +36,10 @@
     margin-top: 0.5em;
     border: solid;
     border-color: black;
+    text-transform: capitalize;
+    
+}
+
+.navLink{
+    color: rgb(179, 119, 71);
 }

@@ -1,7 +1,9 @@
 import React from 'react'
+import { Link, NavLink } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import './NavBar.css'
 import CartWidget from '../CartWidget/CartWidget'
+import Logo from '../../logo/Logo'
 
 
 function NavBar (){
@@ -9,14 +11,14 @@ function NavBar (){
         <header>
             <nav>
                 <div className="containerNav">
-                    <div className="logoContainer">
-                        <img src="src/logo/logo1.png" alt="" />
-                    </div>
+                    <Link to='/' className="logoContainer">
+                        <Logo/>
+                    </Link>
                     
                     <div className="linksContainer">
-                        <a href="">Inicio</a>
-                        <a href="">Productos</a>
-                        <a href="">Contacto</a>
+                        <NavLink to='/'>Inicio</NavLink>
+                        <NavLink to='/products'>Productos</NavLink>
+                        <NavLink to='/contact'>Contacto</NavLink>
                     </div>
                     <CartWidget/>
                 </div>

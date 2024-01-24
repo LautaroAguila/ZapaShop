@@ -1,7 +1,7 @@
 .containerNav{
     margin: 0 auto;
     height: 60px;
-    
+    width: 1280px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,21 +12,12 @@
 a{
     padding: 1.5em;
 }
-.logoContainer{
-    display: flex;
-    align-items: center;
-    width: 5%;
-    height: 100%;
-    overflow: hidden;
-    border-radius: 50%;
-    margin: 0 1em;
-
-}
-.logoContainer img {
-    width: 100%;
-}
 
 .linksContainer a{
     font-size: 80%;
     color: rgb(179, 119, 71);
+}
+.active{
+    background-color: rgb(57, 60, 63);
+    border-radius: 30%;
 }

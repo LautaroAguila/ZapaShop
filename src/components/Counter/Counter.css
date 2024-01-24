@@ -1,0 +1,14 @@
+.btnContainer{
+    border: solid black 1px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 30%;
+}
+.btn{
+    
+    border: solid black 0.5px;
+    border-radius: 30%;
+    color: rgb(179, 119, 71);
+    background-color: #221d1d;
+}
