@@ -4,6 +4,7 @@
     padding: 1.5em;
     will-change: filter;
     transition: filter 300ms;
+    
 }
 
 .contendorList{
@@ -13,13 +14,16 @@
     display: flex;
     padding: 1.5em;
     justify-content: center;
-    
-    
+    flex-wrap: wrap;
+    width: 80%;
 }
 .contendorList p{
     color: rgb(179, 119, 71);
 
 }
 .item {
-    background-color: aliceblue;
+    background-color: rgb(187, 195, 202);
+    display: flex;
+    flex-wrap: wrap;
+    
 }

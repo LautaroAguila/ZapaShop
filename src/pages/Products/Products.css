@@ -1,0 +1,39 @@
+
+.imgArticulo{
+    height: 20em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+    width: 50%;
+}
+
+.contendorList{
+    
+    background-color: #221d1d;
+    margin: 1em auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5em;
+    justify-content: center;
+    
+    
+}
+.contendorList p{
+    color: rgb(179, 119, 71);
+
+}
+.item {
+    background-color: rgb(32, 34, 36);
+    
+}
+
+.filter{
+    background-color: #221d1d;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: solid;
+    border-color: black;
+}

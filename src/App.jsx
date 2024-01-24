@@ -1,17 +1,18 @@
 import React from 'react'
-import ItemListContainer from './Componentes/ItemListContainer/ItemListContainer'
-import NavBar from './Componentes/NavBar/NavBar'
+import ItemListContainer from './components/ItemListContainer/ItemListContainer'
+import NavBar from './components/NavBar/NavBar'
 import './App.css'
+import Products from './pages/Products/Products'
+import Home from './pages/Home/Home'
+import Contact from './pages/Contact/Contact'
+import ItemList from './components/ItemList/ItemList'
 
 function App() {
   
   return (
     <>
-      
-        <NavBar/>
+        <Products/>
         
-        <ItemListContainer precio={100} nombre={"Jordan 1"}/>  
-        <ItemListContainer precio={100} nombre={"Jordan Dunk"}/>
       
       
     </>
