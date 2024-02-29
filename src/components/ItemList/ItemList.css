@@ -3,3 +3,10 @@
     flex-wrap: wrap;
     
 }
+@media (max-width: 800px) {
+    .items{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
