@@ -1,0 +1,13 @@
+.formContainer{
+    margin: 10px auto;
+    padding: 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: rgb(179, 119, 71);
+    border-radius: 10%;
+    opacity: 0.5;
+}
+.botonContact{
+    margin-top: 10px; 
+}

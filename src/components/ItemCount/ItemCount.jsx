@@ -5,9 +5,7 @@ import { useState } from 'react'
 const ItemCount = ({onAdd}) => {
     const [count, setCount] = useState(1)
 
-    const onClickHandler = () => {
-        console.log("COMPRAR")
-    }
+    
     const onChangeHandler = (event) => {
         setCount(Number(event.target.value))
     }

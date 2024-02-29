@@ -16,6 +16,7 @@ a{
 .linksContainer a{
     font-size: 80%;
     color: rgb(179, 119, 71);
+    margin: 0.5em;
 }
 .active{
     background-color: rgb(57, 60, 63);

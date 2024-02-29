@@ -26,11 +26,6 @@ const ItemDetaliContainer = () => {
             })
         setLoading(false)
 
-        /*getProductAsyncById(productId).then((product) => {
-            setItem(product)
-            setLoading(false)
-            console.log(product)
-        })*/
     }, [productId]) 
 
     return loading ? <Spinner/>:( <> <ItemDetail item={item}/> </>)

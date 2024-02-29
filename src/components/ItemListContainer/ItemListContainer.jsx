@@ -15,7 +15,7 @@ const ItemListContainer = ({}) => {
 
     const [items, setItems] = useState([]);
     const {categoryId} = useParams()
-    console.log(categoryId)
+    
 
 
 
@@ -29,8 +29,7 @@ const ItemListContainer = ({}) => {
                 where('category','==',categoryId)
             )
             getDocs(queryCollection).then(({docs})=>{
-                console.log('doocs filter')
-                console.log(docs)
+                
                 const products = docs.map((doc)=>({
                     id: doc.id,
                     ...doc.data(),
@@ -39,8 +38,7 @@ const ItemListContainer = ({}) => {
             })
         }else{
             getDocs(productsCollection).then(({docs})=>{
-                console.log('doocs no filter')
-                console.log(docs)
+                
                 const products = docs.map((doc)=>({
                     id: doc.id,
                     ...doc.data(),
@@ -48,17 +46,7 @@ const ItemListContainer = ({}) => {
                 setItems(products)
             })
         }
-        /*getProductsAsync().then((products) => {
-            if (categoryId) {
-                const filteredProducts = products.filter(
-                    (product) => product.category === categoryId
-                )
-                setItems(filteredProducts)
-            }else{
-                setItems(products)
-                console.log(products)
-            }
-        })*/
+        
         
         
 

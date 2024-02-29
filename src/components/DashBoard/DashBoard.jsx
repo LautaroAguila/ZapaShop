@@ -5,7 +5,7 @@ import './DashBoard.css'
 
 function Dashboard ({children}){
     return(
-        <div className='contenedor'>
+        <div className='dash'>
             
             <div className='dash'> {children} </div>
         </div>

@@ -16,32 +16,10 @@ const CartProvider = ({children}) => {
         setItemsTotal(itemsTotal + quantity)
         setTotal(total + item.price * quantity)
         setCart([...cart, {item, quantity}])
-        /*const isInCart = cart.find(cartItem => {
-                    if(cartItem.item.id === item.id){
-                        return true;
-                    }else{
-                        return false;
-                    }
-                });
-        if (isInCart) {
-            const newCart = cart.map(newItem => {
-                const newQuantity = newItem.quantity + quantity;
-                setItemsTotal(itemsTotal + quantity);
-                setTotal(total + item.price * newQuantity);
-                return { ...newItem, quantity: newQuantity };
-            });
-            setCart(newCart);
-            console.log("hay de mas")
-        }if(isInCart === undefined){
-            setCart([...cart, {item, quantity}])
-            setItemsTotal(itemsTotal + quantity)
-            setTotal(total + item.price * quantity)
-            console.log("no hay de mas")
-        }*/
-        console.log(cart)
+        
+        
     }
 
-    /*const removeItem*/
     const clearCart = () =>{
         setCart([])
         setItemsTotal(0)
