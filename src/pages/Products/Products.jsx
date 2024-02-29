@@ -9,11 +9,10 @@ import { getCategoriesAsync } from "../../utils/MockData";
 function Products() {
 
     const [categories, setCategories] = useState([])
-
     useEffect(()=>{
-        getCategoriesAsync().then((categories)=>{
-            setCategories(categories)
-        })
+        //getCategoriesAsync().then((categories)=>{
+            setCategories(['moda', 'street', 'running', 'sport'])
+       // })
     }, [])
 
     return (
@@ -35,3 +34,4 @@ function Products() {
     )
 }
 export default Products;
+

@@ -20,7 +20,7 @@ function NavBar (){
                         <NavLink to='/products'>Productos</NavLink>
                         <NavLink to='/contact'>Contacto</NavLink>
                     </div>
-                    <CartWidget/>
+                    <Link to='/cart'><CartWidget/></Link>
                 </div>
             </nav>
         </header>

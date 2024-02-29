@@ -6,7 +6,8 @@ import './ItemListContainer.css';
 import { getProductsAsync } from "../../utils/MockData";
 import ItemList from "../ItemList/ItemList";
 import Spinner from "../Spinner/Spinner";
-
+import { db } from "../../firebase/config";
+import { collection, query, where, getDocs } from "firebase/firestore";
 
 
 
@@ -15,8 +16,39 @@ const ItemListContainer = ({}) => {
     const [items, setItems] = useState([]);
     const {categoryId} = useParams()
     console.log(categoryId)
+
+
+
     useEffect(() => {
-        getProductsAsync().then((products) => {
+        
+        const productsCollection = collection(db, 'products')
+
+        if (categoryId) {
+            const queryCollection = query(
+                productsCollection,
+                where('category','==',categoryId)
+            )
+            getDocs(queryCollection).then(({docs})=>{
+                console.log('doocs filter')
+                console.log(docs)
+                const products = docs.map((doc)=>({
+                    id: doc.id,
+                    ...doc.data(),
+                }))
+                setItems(products)
+            })
+        }else{
+            getDocs(productsCollection).then(({docs})=>{
+                console.log('doocs no filter')
+                console.log(docs)
+                const products = docs.map((doc)=>({
+                    id: doc.id,
+                    ...doc.data(),
+                }))
+                setItems(products)
+            })
+        }
+        /*getProductsAsync().then((products) => {
             if (categoryId) {
                 const filteredProducts = products.filter(
                     (product) => product.category === categoryId
@@ -26,7 +58,7 @@ const ItemListContainer = ({}) => {
                 setItems(products)
                 console.log(products)
             }
-        })
+        })*/
         
         
 
