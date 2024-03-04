@@ -22,3 +22,9 @@ a{
     background-color: rgb(57, 60, 63);
     border-radius: 30%;
 }
+@media (max-width: 800px) {
+    .containerNav{
+        height: 150px;
+        font-size: 40px;
+    }
+}

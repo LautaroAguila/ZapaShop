@@ -43,3 +43,12 @@
 .navLink{
     color: rgb(179, 119, 71);
 }
+@media (max-width: 800px) {
+    .item{
+        font-size: 30px;
+    }
+    .filter{
+        font-size: 30px;
+    }
+}
+

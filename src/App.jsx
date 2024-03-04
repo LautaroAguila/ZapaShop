@@ -17,11 +17,11 @@ import Footer from './components/Footer/Footer'
 function App() {
   
   return (
-    <CartProvider>
+    <CartProvider >
 
       <BrowserRouter>
         <NavBar></NavBar>
-        <Routes>
+        <Routes > 
           <Route path='/' element={<Home/>}/>
           <Route path='/products' element={<Products/> } />
           <Route path='/contact' element={<Contact/> } />
@@ -32,8 +32,7 @@ function App() {
           
           
 
-          {/*<Home></Home>
-          <Products></Products>*/}
+          
         </Routes>
         <Footer></Footer>
       </BrowserRouter>

@@ -30,7 +30,7 @@ const ItemDetail = ({item}) => {
             <div className="contendorList">
                 
                 <div className='item'>
-                    <a href="" ><img src={image} alt= {title} className='imgArticulo' /></a>
+                    <img src={image} alt= {title} className='imgArticulo' />
                     <p> {title} </p>
                     <p> ${price} </p>
                     <p>{description}</p>
