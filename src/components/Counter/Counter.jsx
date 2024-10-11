@@ -1,17 +1,18 @@
-import React from 'react'
-import { useCout } from '../../customHooks/useCount'
-import "./Counter.css"
+import React from 'react';
+import { useCount } from '../../customHooks/useCount';
+import './Counter.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const Counter = () => {
-    const {count, decrement, increment, reset} = useCout(0, 0, 100)
+    const { count, decrement, increment, reset } = useCount(0, 0, 100);
     return (
-        <div>
-            <div> {count} </div>
-            <div className='btnContainer'>
-                <buttton onClick={increment} className='btn'>Sum</buttton>
-                <buttton onClick={decrement} className='btn'>Res</buttton>
-                <buttton onClick={reset} className='btn'>Reset</buttton>
+        <div className="counter">
+            <div className="counter__display">{count}</div>
+            <div className='counter__btn-container'>
+                <button onClick={increment} className='counter__btn'>Sum</button>
+                <button onClick={decrement} className='counter__btn'>Res</button>
+                <button onClick={reset} className='counter__btn'>Reset</button>
             </div>
         </div>
-    )
-}
+    );
+};

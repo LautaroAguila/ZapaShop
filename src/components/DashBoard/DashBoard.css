@@ -1,6 +1,26 @@
-.dash{
+/* Dashboard.css */
+
+.dashboard {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    flex-wrap: wrap;
+    background-color: #E8D8CF; /* Color de fondo del dashboard */
+}
+
+.dashboard__content {
+    flex: 1;
+    padding: 20px;
+    background-color: #FFB891; /* Color de fondo del contenido */
+}
+
+/* Ejemplo de estilos adicionales que puedes querer aplicar */
+.dashboard__content h1 {
+    color: #E8602A; /* Color de texto */
+}
+
+.dashboard__content p {
+    color: #FF520D; /* Color de texto */
+}
+
+.dashboard__content a {
+    color: #FF8E5E; /* Color de enlaces */
 }

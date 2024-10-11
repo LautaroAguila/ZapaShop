@@ -1,7 +1,16 @@
-.carro {
-    font-size: 2em;
-    display: flex;
-    align-items: center;
-    color: rgb(179, 119, 71);
-    margin: 0 1em;
+.cart-widget {
+    background-color: #E8D8CF; /* Fondo del widget con color de la paleta */
+    padding: 10px;
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.cart-widget__items-total {
+    color: #FF520D; /* Color del texto con color de la paleta */
+    font-weight: bold;
+    line-height: 1; /* Asegura que la altura de línea sea uniforme */
+}
+
+.cart-widget__icon {
+    font-size: 30px; /* Ajusta el tamaño del icono para que coincida con el tamaño del texto */
+    color: #FF8E5E; /* Ajusta el color del icono con color de la paleta */
 }

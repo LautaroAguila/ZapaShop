@@ -1,33 +1,24 @@
-.body{
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    
+.rounded {
+    border-radius: 8px; /* Ajusta el radio de los bordes redondeados según tu preferencia */
 }
-.formContainer{
-    margin: 10px auto;
-    padding: 10px 10px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    background-color: rgb(179, 119, 71);
-    border-radius: 10%;
-    opacity: 0.5;
+
+.imgCart {
+    max-width: 100%; /* Hace que las imágenes sean responsivas, adaptándose al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de las imágenes */
 }
-.imgCart{
-    height: 10em;
-    border-radius: 50%;
-    margin: 0 2em;
+.imgCart {
+    max-width: 120px; /* Reducir el tamaño máximo de las imágenes */
+    height: auto; /* Mantener la proporción de aspecto */
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 10px;
 }
-ul{
-    list-style: none;
+.rounded {
+    border-radius: 8px;
 }
-li{
-    display: flex;
-    align-items: center;
-}
-.empty-cart{
-    margin: 0 auto;
+
+.imgCart {
+    max-width: 120px;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px;
 }

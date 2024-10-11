@@ -17,3 +17,19 @@ section img:hover{
     opacity: 1;
     filter: contrast(120%)
 }
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+section {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}

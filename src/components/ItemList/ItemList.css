@@ -1,12 +1,6 @@
-.items{
+.items {
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: center; /* Centra los elementos */
 }
-@media (max-width: 800px) {
-    .items{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-}
+

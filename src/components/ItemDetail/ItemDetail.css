@@ -1,12 +1,61 @@
-.itemDetail{
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+.itemDetail {
+    padding: 20px;
+    text-align: center;
 }
 
-.item img{
-    width: 100%;
-    aspect-ratio: 3/2;
-    object-fit: contain;
-    
+.imgArticulo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
+.btn-primary:hover {
+    background-color: #FF520D; /* Color de fondo del botón al pasar el ratón */
+    border-color: #FF520D; /* Color del borde del botón al pasar el ratón */
+    color: #FFFFFF; /* Color del texto del botón al pasar el ratón */
+}
+
+.btn {
+    cursor: pointer;
+}
+/* Fondo del componente */
+.itemDetail {
+    background-color: #E8D8CF; /* Color de fondo del contenedor */
+}
+
+/* Estilo del título */
+.title-color {
+    color: #E8602A; /* Color del título */
+    font-weight: bold;
+}
+
+/* Estilo del precio */
+.price-color {
+    color: #FF520D; /* Color del precio */
+    font-size: 1.5rem;
+}
+
+/* Estilo de la descripción */
+.description-color {
+    color: #FF8E5E; /* Color del texto de la descripción */
+}
+
+/* Estilo de la imagen */
+.imgArticulo {
+    border: 3px solid #FFB891; /* Borde redondeado de la imagen */
+    border-radius: 15px;
+}
+
+/* Botón "ATRÁS" personalizado */
+.btn-outline-primary {
+    background-color: #FFB891;
+    border-color: #FF8E5E;
+    color: white;
+}
+
+.btn-outline-primary:hover {
+    background-color: #FF8E5E;
+    border-color: #FF520D;
 }

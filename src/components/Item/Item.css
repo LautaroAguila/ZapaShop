@@ -1,23 +1,32 @@
-
-.item img{
-    width: 100%;
-    aspect-ratio: 3/2;
-    object-fit: contain;
-    
+.item {
+    padding: 10px;
+    text-align: center;
 }
 
-.contendorList{
-    
-    background-color: #221d1d;
-    margin: 1em auto;
-    display: flex;
-    padding: 1.5em;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 80%;
-}
-.contendorList p{
-    color: rgb(179, 119, 71);
-
+.card {
+    transition: transform 0.3s ease; /* Efecto de transición suave */
+    border: 1px solid #700202; /* Borde de la tarjeta */
+    background-color: #FFB891; /* Fondo de la tarjeta */
 }
 
+.card:hover {
+    transform: translateY(-5px); /* Eleva ligeramente la tarjeta al pasar el ratón */
+}
+
+.card-title {
+    color: #E8602A; /* Color del título */
+}
+
+.card-text {
+    color: #FF520D; /* Color del texto del precio */
+}
+
+.btn-primary {
+    background-color: #411401; /* Color de fondo del botón */
+    border-color: #FF8E5E; /* Color del borde del botón */
+}
+
+.btn-primary:hover {
+    background-color: #FF520D; /* Color de fondo del botón al pasar el ratón */
+    border-color: #FF520D; /* Color del borde del botón al pasar el ratón */
+}

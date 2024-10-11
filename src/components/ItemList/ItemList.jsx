@@ -18,6 +18,7 @@ const ItemList = ({itemList}) => {
                         category = {category}
                         description = {description}
                         image = {image}
+                        
                     />
                 )
             })}

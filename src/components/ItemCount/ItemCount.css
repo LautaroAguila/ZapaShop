@@ -1,0 +1,45 @@
+.item-count {
+    max-width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.btn-decrement,
+.btn-increment {
+    background-color: #E8D8CF; /* Color de fondo de los botones */
+    border-color: #E8D8CF; /* Color del borde de los botones */
+    color: #FF520D; /* Color del texto de los botones */
+}
+
+.btn-decrement:hover,
+.btn-increment:hover {
+    background-color: #FF8E5E; /* Color de fondo de los botones al pasar el ratón */
+    border-color: #FF8E5E; /* Color del borde de los botones al pasar el ratón */
+    color: #FFFFFF; /* Color del texto de los botones al pasar el ratón */
+}
+
+.form-control {
+    border-color: #FFB891; /* Color del borde del input */
+    color: #E8602A; /* Color del texto del input */
+}
+
+.btn-add-to-cart {
+    background-color: #FF8E5E; /* Color de fondo del botón de agregar al carrito */
+    border-color: #FF8E5E; /* Color del borde del botón de agregar al carrito */
+}
+
+.btn-add-to-cart:hover {
+    background-color: #FF520D; /* Color de fondo del botón de agregar al carrito al pasar el ratón */
+    border-color: #FF520D; /* Color del borde del botón de agregar al carrito al pasar el ratón */
+}

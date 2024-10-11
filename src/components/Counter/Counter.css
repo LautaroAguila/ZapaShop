@@ -1,14 +1,39 @@
-.btnContainer{
-    border: solid black 1px;
+.counter {
     display: flex;
-    justify-content: space-evenly;
-    margin: 0 auto;
-    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid #E8602A; /* Borde del contenedor con color de la paleta */
+    border-radius: 8px;
+    width: 200px;
+    margin: 20px auto;
+    background-color: #E8D8CF; /* Fondo del contenedor con color de la paleta */
 }
-.btn{
-    
-    border: solid black 0.5px;
-    border-radius: 30%;
-    color: rgb(179, 119, 71);
-    background-color: #221d1d;
+
+.counter__display {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #FF520D; /* Color del texto con color de la paleta */
+}
+
+.counter__btn-container {
+    display: flex;
+    gap: 10px;
+}
+
+.counter__btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFB891; /* Fondo del botón con color de la paleta */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.counter__btn:hover {
+    background-color: #FF8E5E; /* Fondo del botón al pasar el cursor con color de la paleta */
 }

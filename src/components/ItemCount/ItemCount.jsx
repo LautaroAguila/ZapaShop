@@ -1,32 +1,44 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useState } from 'react';
+import './ItemCount.css';
 
+const ItemCount = ({ onAdd }) => {
+    const [count, setCount] = useState(1);
 
-const ItemCount = ({onAdd}) => {
-    const [count, setCount] = useState(1)
-
-    
     const onChangeHandler = (event) => {
-        setCount(Number(event.target.value))
-    }
+        let value = Number(event.target.value);
+        if (!isNaN(value)) {
+            setCount(value);
+        }
+    };
 
+    const decrementCount = () => {
+        if (count > 1) {
+            setCount(count - 1);
+        } else {
+            alert('El valor mínimo es 1');
+        }
+    };
+
+    const incrementCount = () => {
+        if (count < 100) {
+            setCount(count + 1);
+        } else {
+            alert('El valor máximo es 100');
+        }
+    };
 
     return (
-        <div>
-            <div>
-                <input type="button" value='-' onClick={() =>
-                    count > 1 ? setCount(count-1): alert('VALOR MINIMO!')
-                }/>
-                <input type="number"  value={count} onChange={onChangeHandler}/>
-                <input type="button" value='+' onClick={() =>
-                    count < 100 ? setCount(count+1): alert('VALOR MAXIMO!')
-                }/>
+        <div className="item-count">
+            <div className="input-group">
+                <button className="btn btn-outline-secondary btn-decrement" type="button" onClick={decrementCount}>-</button>
+                <input type="number" className="form-control" value={count} onChange={onChangeHandler} />
+                <button className="btn btn-outline-secondary btn-increment" type="button" onClick={incrementCount}>+</button>
             </div>
             <div>
-                <input type="button" value='Agregar al carrito' onClick={(()=>onAdd(count))} />
+                <button className="btn btn-primary mt-3 btn-add-to-cart" onClick={() => onAdd(count)}>Agregar al carrito</button>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default ItemCount
+export default ItemCount;

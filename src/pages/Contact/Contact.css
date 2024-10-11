@@ -1,13 +1,38 @@
-.formContainer{
-    margin: 10px auto;
-    padding: 10px 10px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    background-color: rgb(179, 119, 71);
-    border-radius: 10%;
-    opacity: 0.5;
+/* Contact.css */
+
+.container {
+    padding: 20px; /* Espaciado interno */
 }
-.botonContact{
-    margin-top: 10px; 
+
+.text-center {
+    color: #FF520D; /* Color de texto para títulos */
 }
+
+.mb-4 {
+    margin-bottom: 2rem; /* Margen inferior para el título */
+}
+
+.mb-3 {
+    margin-bottom: 1rem; /* Margen inferior para los campos de formulario */
+}
+
+.botonContact {
+    background-color: #FF8E5E; /* Color de fondo del botón */
+    border-color: #FF8E5E; /* Color del borde del botón */
+    color: #FFFFFF; /* Color de texto del botón */
+}
+
+.botonContact:hover {
+    background-color: #E8602A; /* Color de fondo al pasar el ratón */
+    border-color: #E8602A; /* Color del borde al pasar el ratón */
+}
+
+.form-control:focus {
+    border-color: #FF520D; /* Color del borde del input al estar enfocado */
+    box-shadow: 0 0 0 0.2rem rgba(255, 82, 13, 0.25); /* Sombra al estar enfocado */
+}
+
+.alert {
+    margin-top: 1rem; /* Margen superior para el componente de alerta */
+}
+

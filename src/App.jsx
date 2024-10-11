@@ -1,6 +1,9 @@
 import React from 'react'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Dashboard  from './components/DashBoard/DashBoard'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import Products from './pages/Products/Products'
